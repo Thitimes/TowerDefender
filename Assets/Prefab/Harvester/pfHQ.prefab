@@ -9,10 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2731113047185925716}
-  - component: {fileID: 3910548030187459126}
-  - component: {fileID: -6903210205182988965}
+  - component: {fileID: -5242746216684440569}
+  - component: {fileID: 3557013471940924167}
+  - component: {fileID: 6648214319323850873}
   m_Layer: 0
-  m_Name: pfStoneHarvester
+  m_Name: pfHQ
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33,7 +34,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3910548030187459126
+--- !u!114 &-5242746216684440569
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -45,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b747cea15a82cb04aaf189d2629fe81e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-6903210205182988965
+--- !u!114 &3557013471940924167
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +58,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf027a2b32e5d9d458cfd907798014f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buildingType: {fileID: 11400000, guid: 59d76bba3ea7fb9469015bf5bc6cfd2e, type: 2}
+  buildingType: {fileID: 11400000, guid: 95fb78eabc3080b438723b4713543278, type: 2}
+--- !u!61 &6648214319323850873
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972288865923461751}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0034775734, y: -0.37760472}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.50611, y: 3.9986205}
+  m_EdgeRadius: 0
 --- !u!1 &6155860263260208731
 GameObject:
   m_ObjectHideFlags: 0
@@ -68,6 +95,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5008610048687269807}
   - component: {fileID: 6281905687242031272}
+  - component: {fileID: 6243372368855310329}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -126,10 +154,10 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1900980477
-  m_SortingLayer: 2
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 2263e91ebcd2a254dab5f4caccb4a7af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7030b8e3eb49e8440ae8eb3ec8b45d05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -140,3 +168,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6243372368855310329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6155860263260208731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6708cb25edfe0bc4797a8ab8cf706d0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  runOnce: 1
+  positionOffsetY: 0
